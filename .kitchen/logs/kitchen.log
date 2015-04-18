@@ -1,0 +1,65 @@
+I, [2015-04-17T18:01:08.835097 #95411]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-04-17T18:01:09.244608 #95411]  INFO -- Kitchen: -----> Creating <default-centos-65>...
+I, [2015-04-17T18:06:59.266193 #95411]  INFO -- Kitchen: -----> Converging <default-centos-65>...
+E, [2015-04-17T18:07:40.966870 #95411] ERROR -- Kitchen: Converge failed on instance <default-centos-65>.
+I, [2015-04-17T18:08:10.385973 #95767]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-04-17T18:08:10.802494 #95767]  INFO -- Kitchen: -----> Converging <default-centos-65>...
+E, [2015-04-17T18:08:15.065137 #95767] ERROR -- Kitchen: Converge failed on instance <default-centos-65>.
+I, [2015-04-17T18:08:39.124606 #96020]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-04-17T18:08:39.524525 #96020]  INFO -- Kitchen: -----> Converging <default-centos-65>...
+E, [2015-04-17T18:08:39.531116 #96020] ERROR -- Kitchen: ------Exception-------
+E, [2015-04-17T18:08:39.531145 #96020] ERROR -- Kitchen: Class: Kitchen::ActionFailed
+E, [2015-04-17T18:08:39.531167 #96020] ERROR -- Kitchen: Message: Failed to complete #converge action: [An error occurred while reading the Berksfile:
+
+  Could not parse `/Users/kaigen/Projects/CX-Flask/metadata.rb': undefined method `coobkook' for #<Ridley::Chef::Cookbook::Metadata:0x007ff912b81088>]
+E, [2015-04-17T18:08:39.531188 #96020] ERROR -- Kitchen: ---Nested Exception---
+E, [2015-04-17T18:08:39.531206 #96020] ERROR -- Kitchen: Class: Berkshelf::BerksfileReadError
+E, [2015-04-17T18:08:39.531215 #96020] ERROR -- Kitchen: Message: An error occurred while reading the Berksfile:
+
+  Could not parse `/Users/kaigen/Projects/CX-Flask/metadata.rb': undefined method `coobkook' for #<Ridley::Chef::Cookbook::Metadata:0x007ff912b81088>
+E, [2015-04-17T18:08:39.531235 #96020] ERROR -- Kitchen: ------Backtrace-------
+E, [2015-04-17T18:08:39.531244 #96020] ERROR -- Kitchen: /Users/kaigen/Projects/CX-Flask/metadata.rb:9:in `block in from_file'
+E, [2015-04-17T18:08:39.531254 #96020] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/ridley-4.1.2/lib/ridley/mixin/from_file.rb:31:in `instance_eval'
+E, [2015-04-17T18:08:39.531272 #96020] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/ridley-4.1.2/lib/ridley/mixin/from_file.rb:31:in `block in from_file'
+E, [2015-04-17T18:08:39.531290 #96020] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/ridley-4.1.2/lib/ridley/mixin/from_file.rb:74:in `with_error_handling'
+E, [2015-04-17T18:08:39.531299 #96020] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/ridley-4.1.2/lib/ridley/mixin/from_file.rb:30:in `from_file'
+E, [2015-04-17T18:08:39.531307 #96020] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/ridley-4.1.2/lib/ridley/mixin/from_file.rb:5:in `from_file'
+E, [2015-04-17T18:08:39.531316 #96020] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/berkshelf-3.2.3/lib/berkshelf/berksfile.rb:164:in `metadata'
+E, [2015-04-17T18:08:39.531324 #96020] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/cleanroom-1.0.0/lib/cleanroom.rb:130:in `public_send'
+E, [2015-04-17T18:08:39.531333 #96020] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/cleanroom-1.0.0/lib/cleanroom.rb:130:in `block (3 levels) in cleanroom'
+E, [2015-04-17T18:08:39.531341 #96020] ERROR -- Kitchen: /Users/kaigen/Projects/CX-Flask/Berksfile:3:in `evaluate'
+E, [2015-04-17T18:08:39.531349 #96020] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/cleanroom-1.0.0/lib/cleanroom.rb:70:in `instance_eval'
+E, [2015-04-17T18:08:39.531358 #96020] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/cleanroom-1.0.0/lib/cleanroom.rb:70:in `evaluate'
+E, [2015-04-17T18:08:39.531366 #96020] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/cleanroom-1.0.0/lib/cleanroom.rb:56:in `evaluate_file'
+E, [2015-04-17T18:08:39.531403 #96020] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/cleanroom-1.0.0/lib/cleanroom.rb:173:in `evaluate_file'
+E, [2015-04-17T18:08:39.531413 #96020] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/berkshelf-3.2.3/lib/berkshelf/berksfile.rb:23:in `from_file'
+E, [2015-04-17T18:08:39.531430 #96020] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/provisioner/chef/berkshelf.rb:68:in `block in resolve'
+E, [2015-04-17T18:08:39.531441 #96020] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/thor-0.19.1/lib/thor/shell/basic.rb:20:in `mute'
+E, [2015-04-17T18:08:39.531449 #96020] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/provisioner/chef/berkshelf.rb:64:in `resolve'
+E, [2015-04-17T18:08:39.531458 #96020] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/provisioner/chef_base.rb:430:in `block in resolve_with_berkshelf'
+E, [2015-04-17T18:08:39.531466 #96020] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/provisioner/chef_base.rb:429:in `synchronize'
+E, [2015-04-17T18:08:39.531474 #96020] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/provisioner/chef_base.rb:429:in `resolve_with_berkshelf'
+E, [2015-04-17T18:08:39.531482 #96020] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/provisioner/chef_base.rb:274:in `prepare_cookbooks'
+E, [2015-04-17T18:08:39.531491 #96020] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/provisioner/chef_base.rb:106:in `create_sandbox'
+E, [2015-04-17T18:08:39.531499 #96020] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/provisioner/chef_zero.rb:42:in `create_sandbox'
+E, [2015-04-17T18:08:39.531507 #96020] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/driver/ssh_base.rb:42:in `converge'
+E, [2015-04-17T18:08:39.531515 #96020] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/kitchen-vagrant-0.15.0/lib/kitchen/driver/vagrant.rb:75:in `converge'
+E, [2015-04-17T18:08:39.531524 #96020] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:352:in `public_send'
+E, [2015-04-17T18:08:39.531532 #96020] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:352:in `block in perform_action'
+E, [2015-04-17T18:08:39.531540 #96020] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:416:in `call'
+E, [2015-04-17T18:08:39.531548 #96020] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:416:in `synchronize_or_call'
+E, [2015-04-17T18:08:39.531557 #96020] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:381:in `block in action'
+E, [2015-04-17T18:08:39.531565 #96020] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
+E, [2015-04-17T18:08:39.531573 #96020] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:380:in `action'
+E, [2015-04-17T18:08:39.531582 #96020] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:352:in `perform_action'
+E, [2015-04-17T18:08:39.531605 #96020] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:312:in `converge_action'
+E, [2015-04-17T18:08:39.531614 #96020] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:292:in `block in transition_to'
+E, [2015-04-17T18:08:39.531623 #96020] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:291:in `each'
+E, [2015-04-17T18:08:39.531631 #96020] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:291:in `transition_to'
+E, [2015-04-17T18:08:39.531639 #96020] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:130:in `converge'
+E, [2015-04-17T18:08:39.531648 #96020] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/command.rb:176:in `public_send'
+E, [2015-04-17T18:08:39.531656 #96020] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/command.rb:176:in `block (2 levels) in run_action'
+E, [2015-04-17T18:08:39.531664 #96020] ERROR -- Kitchen: ----------------------
+I, [2015-04-17T18:08:54.721143 #96258]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-04-17T18:08:55.132786 #96258]  INFO -- Kitchen: -----> Converging <default-centos-65>...
+I, [2015-04-17T18:11:46.307098 #96258]  INFO -- Kitchen: -----> Kitchen is finished. (2m51.59s)
