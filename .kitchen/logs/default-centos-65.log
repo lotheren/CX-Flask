@@ -383,3 +383,54 @@ I, [2015-04-17T18:11:44.272559 #96258]  INFO -- default-centos-65: Running handl
 I, [2015-04-17T18:11:44.272579 #96258]  INFO -- default-centos-65: Running handlers complete
 I, [2015-04-17T18:11:44.272597 #96258]  INFO -- default-centos-65: Chef Client finished, 16/19 resources updated in 166.377395217 seconds
 I, [2015-04-17T18:11:46.306960 #96258]  INFO -- default-centos-65: Finished converging <default-centos-65> (2m51.17s).
+I, [2015-04-17T18:21:46.194410 #1412]  INFO -- default-centos-65: -----> Converging <default-centos-65>...
+I, [2015-04-17T18:21:46.195784 #1412]  INFO -- default-centos-65: Preparing files for transfer
+I, [2015-04-17T18:21:46.195857 #1412]  INFO -- default-centos-65: Preparing dna.json
+I, [2015-04-17T18:21:46.196161 #1412]  INFO -- default-centos-65: Resolving cookbook dependencies with Berkshelf 3.2.3...
+I, [2015-04-17T18:21:46.382159 #1412]  INFO -- default-centos-65: Removing non-cookbook files before transfer
+I, [2015-04-17T18:21:46.387908 #1412]  INFO -- default-centos-65: Preparing validation.pem
+I, [2015-04-17T18:21:46.388224 #1412]  INFO -- default-centos-65: Preparing client.rb
+I, [2015-04-17T18:21:46.629130 #1412]  INFO -- default-centos-65: -----> Chef Omnibus installation detected (install only if missing)
+I, [2015-04-17T18:21:46.679191 #1412]  INFO -- default-centos-65: Transferring files to <default-centos-65>
+I, [2015-04-17T18:21:48.131654 #1412]  INFO -- default-centos-65: Starting Chef Client, version 12.2.1
+I, [2015-04-17T18:21:49.362803 #1412]  INFO -- default-centos-65: [2015-04-18T01:21:49+00:00] WARN: Child with name 'dna.json' found in multiple directories: /tmp/kitchen/dna.json and /tmp/kitchen/dna.json
+I, [2015-04-17T18:21:49.388280 #1412]  INFO -- default-centos-65: resolving cookbooks for run list: ["CX-Flask::default"]
+I, [2015-04-17T18:21:49.558222 #1412]  INFO -- default-centos-65: Synchronizing Cookbooks:
+I, [2015-04-17T18:21:49.571107 #1412]  INFO -- default-centos-65:   - CX-Flask
+I, [2015-04-17T18:21:49.571147 #1412]  INFO -- default-centos-65:   - build-essential
+I, [2015-04-17T18:21:49.571161 #1412]  INFO -- default-centos-65:   - yum
+I, [2015-04-17T18:21:49.572237 #1412]  INFO -- default-centos-65:   - yum-epel
+I, [2015-04-17T18:21:49.577985 #1412]  INFO -- default-centos-65:   - python
+I, [2015-04-17T18:21:49.578030 #1412]  INFO -- default-centos-65: Compiling Cookbooks...
+I, [2015-04-17T18:21:49.592566 #1412]  INFO -- default-centos-65: Converging 19 resources
+I, [2015-04-17T18:21:49.593248 #1412]  INFO -- default-centos-65: Recipe: build-essential::_rhel
+I, [2015-04-17T18:21:50.455235 #1412]  INFO -- default-centos-65:  (up to date)
+I, [2015-04-17T18:21:50.456275 #1412]  INFO -- default-centos-65:   * yum_package[bison] action install (up to date)
+I, [2015-04-17T18:21:50.457357 #1412]  INFO -- default-centos-65:   * yum_package[flex] action install (up to date)
+I, [2015-04-17T18:21:50.458434 #1412]  INFO -- default-centos-65:  (up to date)
+I, [2015-04-17T18:21:50.458460 #1412]  INFO -- default-centos-65:   * yum_package[gcc-c++] action install (up to date)
+I, [2015-04-17T18:21:50.459521 #1412]  INFO -- default-centos-65:  (up to date)
+I, [2015-04-17T18:21:50.459546 #1412]  INFO -- default-centos-65:   * yum_package[make] action install (up to date)
+I, [2015-04-17T18:21:50.460612 #1412]  INFO -- default-centos-65:  (up to date)
+I, [2015-04-17T18:21:50.460638 #1412]  INFO -- default-centos-65:   * yum_package[patch] action install (up to date)
+I, [2015-04-17T18:21:50.460652 #1412]  INFO -- default-centos-65: Recipe: python::package
+I, [2015-04-17T18:21:50.461717 #1412]  INFO -- default-centos-65:  (up to date)
+I, [2015-04-17T18:21:50.461744 #1412]  INFO -- default-centos-65:   * yum_package[python-devel] action install (up to date)
+I, [2015-04-17T18:21:50.461758 #1412]  INFO -- default-centos-65: Recipe: python::pip
+I, [2015-04-17T18:21:50.461770 #1412]  INFO -- default-centos-65:   * cookbook_file[/tmp/kitchen/cache/get-pip.py] action create (skipped due to not_if)
+I, [2015-04-17T18:21:50.461782 #1412]  INFO -- default-centos-65:   * execute[install-pip] action run (skipped due to not_if)
+I, [2015-04-17T18:21:52.880930 #1412]  INFO -- default-centos-65: 
+I, [2015-04-17T18:21:52.880986 #1412]  INFO -- default-centos-65:     - upgrade python_pip[setuptools] version from  to latest
+I, [2015-04-17T18:21:52.881005 #1412]  INFO -- default-centos-65: Recipe: python::virtualenv
+I, [2015-04-17T18:21:53.621050 #1412]  INFO -- default-centos-65: 
+I, [2015-04-17T18:21:53.622033 #1412]  INFO -- default-centos-65: 
+I, [2015-04-17T18:21:53.622086 #1412]  INFO -- default-centos-65: Recipe: CX-Flask::default
+I, [2015-04-17T18:21:53.842824 #1412]  INFO -- default-centos-65:  (up to date)
+I, [2015-04-17T18:21:54.076186 #1412]  INFO -- default-centos-65:   * python_pip[ansible] action install (up to date)
+I, [2015-04-17T18:21:54.301786 #1412]  INFO -- default-centos-65:  (up to date)
+I, [2015-04-17T18:21:54.303809 #1412]  INFO -- default-centos-65:  (up to date)
+I, [2015-04-17T18:21:54.334306 #1412]  INFO -- default-centos-65: 
+I, [2015-04-17T18:21:54.334354 #1412]  INFO -- default-centos-65: Running handlers:
+I, [2015-04-17T18:21:54.334369 #1412]  INFO -- default-centos-65: Running handlers complete
+I, [2015-04-17T18:21:54.334381 #1412]  INFO -- default-centos-65: Chef Client finished, 2/17 resources updated in 6.20182498 seconds
+I, [2015-04-17T18:21:56.360752 #1412]  INFO -- default-centos-65: Finished converging <default-centos-65> (0m10.16s).

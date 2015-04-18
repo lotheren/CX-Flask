@@ -63,3 +63,6 @@ E, [2015-04-17T18:08:39.531664 #96020] ERROR -- Kitchen: ----------------------
 I, [2015-04-17T18:08:54.721143 #96258]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
 I, [2015-04-17T18:08:55.132786 #96258]  INFO -- Kitchen: -----> Converging <default-centos-65>...
 I, [2015-04-17T18:11:46.307098 #96258]  INFO -- Kitchen: -----> Kitchen is finished. (2m51.59s)
+I, [2015-04-17T18:21:45.771181 #1412]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+I, [2015-04-17T18:21:46.194355 #1412]  INFO -- Kitchen: -----> Converging <default-centos-65>...
+I, [2015-04-17T18:21:56.360895 #1412]  INFO -- Kitchen: -----> Kitchen is finished. (0m10.59s)
